@@ -135,7 +135,7 @@ if __name__ == '__main__':
     args = argument_parser()
 
     resultDir = "result/"
-    datasets = ["News", "News-T", "Tweets", "reuters21578", "Tweets-T", "reuters21578-T"]
+    datasets = ["News", "News-T", "Tweets", "Tweets-T"]
     dataset = "data/"+datasets[0]
 
     alphas, betas = grid_search(args)
