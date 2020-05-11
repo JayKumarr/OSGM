@@ -4,7 +4,6 @@ import numpy as np
 import json, time, sys, os, ntpath, argparse
 from PrintingFile import print_dic
 import psutil
-from evaluate import evaluate_results
 
 
 def printExecutionTime(startTime, str="", divide_by=1):
@@ -252,8 +251,8 @@ if __name__ == '__main__':
         # end of beta loop
     #end of alpha loop
 
-    if (args['generate_summary']):
-        evaluate_results(dataset, outputPath, "stats/")
+#    if (args['generate_summary']):
+#        evaluate_results(dataset, outputPath, "stats/")
 
     printExecutionTime(start_time)
 
