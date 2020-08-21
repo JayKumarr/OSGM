@@ -1,4 +1,4 @@
-# FEOSDM
+# OSGM
 
 * Python 3.7.x:
 
