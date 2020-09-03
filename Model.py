@@ -6,6 +6,18 @@ from PrintingFile import print_dic
 from  Cluster import Cluster
 
 class Model:
+        """
+    ALPHA  {float}
+    BETA   {float}
+    LAMDA  {float}
+    applyDecay  {boolean}   apply the fading/decay (LAMDA) factor with every micro-cluster, if fading weight reaches to zero, it will delete the micro-cluster
+    applyICF    {boolean}   apply inverse cluster frequency while calculating the term similarity score
+    applyCWW    {boolean}   apply co-occurence term while calculating document micro-cluster similarity
+    FR_THRESHOLD  {float}(0,1] apply feature reduction using triangular time decay function, if value = -1 then it will not apply feature reduction   
+    local_vocabulary_beta {boolean}   while calculating Vocabulary*Beta [the denominator] ,  if False then it will count vocabulary from all cluster, if True then it will count vocabulary of one cluster 
+    merge_old_cluster {boolean}   it will merge old cluster according to given condition
+    new_vocabulary_for_beta {boolean}   it will merge cluster/model vocabulary with document vocabulary, then used to calculate Vocabulary*Beta
+    """
 
     def __init__(self, ALPHA, BETA, LAMDA, applyDecay=True, applyICF = True, applyCWW = True, single_term_clustering = False, FR_THRESHOLD=-1, local_vocabulary_beta = False, merge_old_cluster = False, mclus_beta_multi = 1, new_vocabulary_for_beta = False):
         self.alpha = ALPHA
