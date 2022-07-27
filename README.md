@@ -1,4 +1,5 @@
 # OSGM
+J. Kumar, S. U. Din, Q. Yang, R. Kumar and J. Shao, "An Online Semantic-Enhanced Graphical Model for Evolving Short Text Stream Clustering," in IEEE Transactions on Cybernetics, doi: 10.1109/TCYB.2021.3108897.
 
 * Python 3.7.x:
 
