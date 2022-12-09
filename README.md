@@ -20,3 +20,4 @@ python main.py -d "data/Tweets-T-N" -o "result/" -lcb -stc -cww -decay 0.000001 
 * lcb   : include cluster-based beta value
 * cww   : include word-to-word co-occurrence probability
 * mclus : enable merging of outdated clusters
+* stc : calculate probability for cluster containing at least one common term btw doc and cluster
